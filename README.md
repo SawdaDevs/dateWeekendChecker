@@ -3,4 +3,4 @@ Wouldn't it be cool if you know which years you have your date of birth on the w
 
 Check which years a date falls on the weekend by passing date in 'dd-mm' string format.
 
-A string of years and dates are returned i.e 'Sun-2020'.
+A string of years and dates are returned i.e 'Sun-2020'.s
