@@ -19,21 +19,17 @@ function run(birthday_date) {
 
 	for ( let year=2016; year<2066; year++ ){
 		let currDate = new Date(year,(newBirthDate[1]-1),newBirthDate[0])
-
+		const isLeap = ()=> year % 4 === 0
 		if (currDate.getDay() ===0 || currDate.getDay()===5 || currDate.getDay()===6)
     	{
-			console.log("month",currDate.getMonth(), 'day', currDate.getDay())
-            if((new Date(year, currDate.getMonth(), currDate.getDate()) === 1) ){
-                if(year%4===0){
-                    console.log(year)
-                    future_dates+= `${dayOfWeek[currDate.getDay()]}-${year} `
-                }
-                }
-            else{
-                future_dates+= `${dayOfWeek[currDate.getDay()]}-${year} `
-            }
-
-			
+			if(newBirthDate[0]===29 & newBirthDate[1]=== 2)
+			{
+				if(isLeap()) {
+					future_dates+= `${dayOfWeek[currDate.getDay()]}-${year} `
+				}
+			}else{
+				future_dates+= `${dayOfWeek[currDate.getDay()]}-${year} `
+			}
 		}
 	}
 	
