@@ -1,7 +1,4 @@
 function run(birthday_date) {
-	/*
-	* Write your code below; return type and arguments should be according to the problem\'s requirements
-	*/
 	let future_dates = ""
 	let newBirthDate = birthday_date.split("-")
 	newBirthDate[0]= parseInt(newBirthDate[0])
