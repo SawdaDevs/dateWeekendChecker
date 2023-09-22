@@ -1,4 +1,4 @@
-function run(birthday_date) {
+const run = (birthday_date)=> {
 	let future_dates = ""
 	let newBirthDate = birthday_date.split("-")
 	newBirthDate[0]= parseInt(newBirthDate[0])
@@ -32,5 +32,6 @@ function run(birthday_date) {
 	
 	return future_dates;
 }
+module.exports = run
 
 console.log(run("29-02"))
